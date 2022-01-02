@@ -1,7 +1,9 @@
-one way to run these files:
+one way to run these files in local servers:
    - you must run a webserver solution like xampp, and start the apache servers.
+      - download xampp here: https://www.apachefriends.org/download.html
    - the database used for this project is oracle sql, on oracle 10g express edition
-   - put the file in htdocs of the xampp directory.
+      - download oracle 10g express edition here: https://www.appservgrid.com/coherence/downxe.html
+   - put the file in htdocs of the xampp directory.(detect the location in your pc, then put it in the htdocs file)
    - open the localhost of your webBrowser.
    - open the file : Project_Castle_Y1S1/phpFiles/RegistrationPage.php. 
    - in the directory Project_Castle_Y3S1\SQL_Files\Project_Castle(htdocs).sql the (User_) table must be run 
