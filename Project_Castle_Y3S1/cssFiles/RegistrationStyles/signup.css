@@ -1,0 +1,471 @@
+@import "Login.css";
+
+
+/*  this is all about grid's center */
+.main .grid_center .Registration_Holder_SignUp {
+    background-image: linear-gradient(200deg, rgb(221, 221, 221), rgba(197, 197, 197, 0.801));
+    border-radius: 20px;
+    /* border: 0.5px solid white; */
+    width: 800px; 
+    height: auto;
+    top: 50%; 
+    left: 150%;
+    transform:translate(-50%, -50%);
+    opacity: 0.0;
+    display: none;
+    position: absolute;
+    transition: all 200ms 400ms;
+    overflow:hidden;
+
+    
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_Castle_Tag_Holder{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    transition: all 400ms 400ms;
+   
+
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_Castle_Tag_Holder svg
+{
+    width: 20%;
+    height: 70px;
+    /* border: 1px red solid; */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_Castle_Tag_Holder svg path{
+    color: #414141;
+    fill: currentColor;
+    border: 1px solid red;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_Castle_Tag_Holder .Castle_Word
+{
+    font-family: Lobster; 
+    font-size: 22px;
+    /* border: 1px red solid; */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:  80px 80px 80px 80px 80px 80px;
+    /* border: 1px red solid; */
+    transition: all 400ms 400ms;
+    position: relative;
+    top: 0;
+    left: 0; 
+}
+
+
+/* .main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Password{
+
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Confirm_Password{
+
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Email{
+    
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Address{
+    
+} */
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Gender{
+    margin: 1.6% 7.5%;
+    border-bottom:rgba(102, 102, 102, 0.801) solid 2px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Gender:first-child{
+    color: black;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Gender input{
+    background-color: transparent;
+    border: transparent;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Gender label{
+    font-size: 120%;
+    color:rgba(75, 75, 75, 0.801);
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Gender label[id=Gen]{
+    margin-right: 15px;
+}
+
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Role{
+    margin: 1.6% 7.5%;
+    border-bottom:rgba(102, 102, 102, 0.801) solid 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Role label{
+    color:rgba(75, 75, 75, 0.801);
+    margin-left: 10px;
+    font-size: large;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Role select{
+  background-color: transparent;
+    border-radius: 50px;
+    border-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 50%;
+    text-indent: 10px;
+    outline: none;
+    transition: background-color 350ms;
+    margin-left: 10px;
+    position: relative;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Role select:hover{
+      background-color: #b6b6b6;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age{
+    margin: 1.6% 7.5%;
+    border-bottom:rgba(102, 102, 102, 0.801) solid 2px;
+    padding-bottom: 5px;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age label{
+    color:rgba(75, 75, 75, 0.801);
+    font-size: large;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age select{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 0.5);
+    width: 25%;
+    height: 50%;
+    text-indent: 10px;
+    outline: none;
+    transition: background-color 350ms;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age select:hover{
+    background-color: #b6b6b6;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age input{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 20%;
+    height: 50%;
+    outline: none;
+    text-indent: 10px; 
+    transition: background 350ms;
+    /* border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style:solid;  */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age input:hover{
+     background-color: #b6b6b6;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Telephone_No{
+
+
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew{
+    /* border: solid black 1px; */
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew div{
+    width: 10%;
+    height: 60%;
+    border: 1px solid black;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew div:active{
+    background-color: rgba(8, 8, 8, 0.637);
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next
+{
+    width: 30%;
+    height: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    border-radius: 30px;
+    position: relative;
+    /* z-index: 1; */
+    font-size: large;
+    /* text-indent: 30px;  */
+    color:rgba(75, 75, 75, 0.801);
+    cursor: pointer;
+    /* transition-delay: 400ms; */
+}
+
+/* .main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next:active{
+    background-color: rgba(8, 8, 8, 0.637);
+} */
+
+/* make default radio 'invisible' */
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+}
+
+/* make new radio outer circle */
+input[type=radio]:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: transparent;  
+
+}
+
+/* change colour of radio outer circle when checked */
+input[type=radio]:checked:before {
+  background-color: black;
+
+}
+
+/* this was used while trying to style the radio buttons, and it wasn't necessasry to have this one*/
+/* make new radio inner circle when checked */
+/* input[type=radio]:checked:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background:transparent;
+} */
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next p:first-child {
+    margin-left: 20px;
+    /* background: red; */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next p:last-child{
+    margin-left: 20px;
+    /* padding-left: 10px; */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next p object{
+    transform:rotate(180deg);
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next:after
+{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: 0px !important;
+  margin-top: -150%;
+  opacity: 0;
+  transition: all 0.8s;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #next:active:after
+{
+      margin: 0;
+      padding: 0;
+	  opacity: 1;
+	  transition: 0s;  
+      overflow:hidden;
+} 
+
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #previous{
+     width: 30%;
+    height: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow:hidden;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    font-size: large;
+    color:rgba(75, 75, 75, 0.801);
+    cursor: pointer;   
+
+}
+
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #previous p:last-child{
+    margin-right: 10px;
+} 
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #previous p object{
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #previous:after
+{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: 0px !important;
+  margin-top: -150%;
+  opacity: 0;
+  transition: all 0.8s;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Login_CreateNew #previous:active:after
+{
+      margin: 0;
+      padding: 0;
+	  opacity: 1;
+	  transition: 0s;  
+      overflow:hidden;
+} 
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Symbol{
+    /* border: solid black 1px; */
+    color:rgb(117, 116, 116);
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_PrivacyPolicy{
+    /* border: solid black 1px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.6% 7.5%;
+    border-bottom:rgba(102, 102, 102, 0.801) solid 2px;
+    padding-bottom: 10px;
+
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_PrivacyPolicy div{
+    word-wrap: break-word;
+    width: 80%;
+    margin-left: 10px;
+    font-size: 20px;
+    
+    /* column-gap: 40px; */
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_PrivacyPolicy input{
+    margin-left: 10px;
+    width: 15px;
+    height: 15x;
+    border-radius: 20px;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Topics_Holder{
+    display: none;
+}
+
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_UserName input,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Password input,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Confirm_Password input,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Email input,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Telephone_No input,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Address input
+{  text-indent: 20px;
+   width: 85%;
+   background-color: #ffffff00;
+   outline: none;
+   height: 80%;
+   font-size: 120%;
+   border-color: rgba(102, 102, 102, 0.801); 
+}
+
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_UserName, 
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Telephone_No,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Age,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Password,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Confirm_Password,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Email,
+.main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Address
+/* .main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_PrivacyPolicy */
+/* .main .grid_center .Registration_Holder_SignUp .sign_All_User_Data .sign_Role */
+{
+    /* border: solid black 1px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+

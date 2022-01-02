@@ -1,0 +1,144 @@
+
+{
+    "Topics": [
+            {
+        "topic": "Technology",
+        "parts": {
+                    "0": "AI",
+                    "1": "Programming",
+                    "2": "PC",
+                    "3": "Mobile",
+                    "4": "Other"
+                }
+            },
+            {
+        "topic": "Religion",
+        "parts": {
+                    "0": "Islam",
+                    "1": "Christianity",
+                    "2": "judaism",
+                    "3": "Other"
+                }
+            },
+            {
+        "topic": "Social Media",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Music",
+        "parts": {
+                    "0": "POP",
+                    "1": "Rock",
+                    "2": "Rap",
+                    "3": "JAZZ",
+                    "4": "Country",
+                    "5": "Hip-Hop",
+                    "6": "Classical",
+                    "7": "Metal",
+                    "8": "Other"
+                }
+            },
+            {
+        "topic": "Anime",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Movies",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Education",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Cars",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Health",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Social Issues",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Environment",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "Politics",
+        "parts": {
+                    "0": ""
+                }
+            },
+            {
+        "topic": "History",
+        "parts": {
+                    "0": "Political History",
+                    "1": "Social History",
+                    "2": "Economic History",
+                    "3": "Diplomatic History",
+                    "4": "Art History",
+                    "5": "Food History",
+                    "6": "Science History",
+                    "7": "Cultural History",
+                    "8": "Intelectual History",
+                    "9": "Environmental History"
+                }
+            },
+            {
+        "topic": "Science",
+        "parts": {
+                    "0": "Physics",
+                    "1": "Chemistry",
+                    "2": "Biology",
+                    "3": "Mathematics",
+                    "4": "Computer Science"
+                }
+            },
+            {
+        "topic": "Relationships",
+        "parts": {
+                    "0": "Marriage",
+                    "1": "Divorce",
+                    "2": "Love",
+                    "3": "Children",
+                    "4": "Friends",
+                    "5": "Family",
+                    "6": "Money"
+                }
+            },
+            {
+        "topic": "Foods",
+        "parts": {
+                    "0": "Fast Food",
+                    "1": "Classic"
+                }
+            },
+            {
+                "topic": "News",
+                "parts": {}
+            },
+            {
+                "topic": "Other",
+                "parts": { }
+            }
+    ]
+}

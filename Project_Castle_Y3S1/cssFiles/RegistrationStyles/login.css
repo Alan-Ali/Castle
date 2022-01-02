@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    margin: 0;
+    padding: 0;
+    background-color: #6d6d6d;
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 40% 30%;
+
+}
+
+.main .grid_left{
+    /* border: red solid 1px; */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.main .grid_center{
+    position: relative;
+    /* border: blue solid 1px;*/
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+    /* overflow:hidden; */
+}
+
+.main .grid_right{
+    /* border: black solid 1px; */
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+
+}
+
+
+/*  this is all about grid's center */
+.main .grid_center .Registration_Holder_Login {
+    background-image: linear-gradient(200deg, rgb(221, 221, 221), rgba(197, 197, 197, 0.801));
+    border-radius: 20px;
+    border: 0.5px solid white;
+    width: 450px; 
+    height: auto;
+    top: 50%; 
+    left: 50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    display:grid;
+    grid-template-rows: 120px 100px 100px 150px 60px ;
+    grid-template-columns: 100%;
+    transition: all 200ms 400ms;
+    /* animation: 400ms toright;
+    animation-iteration-count: 1;
+    animation-delay: 400ms; */
+    /* display: none; */
+}
+
+
+    
+@keyframes toright {
+    from{
+        opacity: 0;
+        left: 30%;
+    }
+    to
+    {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+
+
+.main .grid_center .Registration_Holder_Login .Castle_Tag_Holder{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main .grid_center .Registration_Holder_Login .Castle_Tag_Holder svg{
+    width: 20%;
+    height: 70px;
+}
+
+
+.main .grid_center .Registration_Holder_Login .Castle_Tag_Holder svg path{
+    color: #414141;
+    fill: currentColor;
+    /* border: 1px solid red; */
+}
+
+.main .grid_center .Registration_Holder_Login .Castle_Tag_Holder .Castle_Word{
+    /* border: black solid 1px; */
+    font-family: Lobster; 
+    font-size: 22px;
+    text-align: center;
+    vertical-align: bottom;
+
+}
+
+/* Email and password css properties together*/
+.main .grid_center .Registration_Holder_Login .Email ,  
+.main .grid_center .Registration_Holder_Login .Password{
+ /* border: black solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main .grid_center .Registration_Holder_Login .Email input,
+.main .grid_center .Registration_Holder_Login .Password input{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: large;
+    outline:none;
+    text-indent: 20px;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  background-color: #eee;
+}
+
+
+
+/* .main .grid_center .Registration_Holder_Login .Password {
+     border: black solid 1px;
+}     */
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 50% 50%;
+     border-bottom: #6e6e6e solid 2px;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-left: 25px;
+     margin-right: 25px;
+     padding-top: 7.5px;
+
+     
+     /* grid-gap: 10px; */
+}
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item1{
+    background-color: rgba(128, 128, 128, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size:20px;
+    border-radius: 30px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;    
+    transition: .8s all;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+/* 
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item1:active{
+    background-color: rgba(8, 8, 8, 0.637);
+} */
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item1:after
+{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: 0px !important;
+  margin-top: -150%;
+  opacity: 0;
+  transition: all 0.8s 200ms;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item1:active:after
+ {     margin: 0;
+      padding: 0;
+	  opacity: 1;
+	  transition: 0s;  
+      overflow:hidden;
+} 
+
+
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item2{
+    /* background-color:black; */
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    font-size:20px;
+    /* color:rgb(0, 119, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    text-decoration: none;
+    transition: all 200ms;
+    background-color: rgba(128, 128, 128, 0);
+    border: 0;
+    
+}
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item2 a{
+    text-decoration-line:none;
+    text-decoration-color: none;
+}
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item2:hover{
+    text-decoration: underline;
+    color:rgb(0, 119, 255);
+}
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item3{
+    background-color:rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size:20px;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.8s ;
+    
+}
+/* 
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item3:active{
+    background-color: rgba(8, 8, 8, 0.637);
+} */
+
+ .main .grid_center .Registration_Holder_Login .Login_CreateNew .item3:after
+{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: 0px !important;
+  margin-top: -150%;
+  opacity: 0;
+  transition: all 0.8s;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.main .grid_center .Registration_Holder_Login .Login_CreateNew .item3:active:after
+{
+      margin: 0;
+      padding: 0;
+	  opacity: 1;
+	  transition: 0s;  
+      overflow:hidden;
+} 
+
+
+.main .grid_center .Registration_Holder_Login .Symbol {
+     /* border: black solid 1px; */
+     color:rgb(117, 116, 116);
+     padding-top:10px;
+     padding-bottom: 10px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-left: 25px;
+     margin-right: 25px;
+}
+
+.main .grid_center .Registration_Holder_Login .Symbol svg path{
+    color: rgb(117, 116, 116);
+    fill: currentColor;
+}
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 800px){
+    .main .grid_center .Registration_Holder_Login{
+        width: 300px;
+    }
+} */
+
+
+
+

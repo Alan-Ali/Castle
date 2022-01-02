@@ -1,0 +1,182 @@
+
+.CircleLoader{
+    width: 10px;
+    height: 10px;
+    border-left: 2px black solid;
+    border-radius: 15px;
+    animation: load 1s infinite;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.TextAndTopic{
+    width: 100%;
+    height: 485px;
+    /* border: solid brown 1px; */
+    bottom: 0px;
+    left: 100%; 
+    position: absolute; 
+    overflow:hidden;
+    transition: all 400ms 400ms;
+    opacity: 0;
+
+}
+
+.TextHolder{
+    width: 95%;
+    height: 55px;
+    /* transform: translate(-50%, -50%); */
+    font-size: 50px;
+    border: 1px black solid;
+    border-radius: 30px;
+    font-size: large;
+    position: relative;
+    top: 15px;
+    left: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-size: 25px;
+}
+
+.NextPrevAndDone{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 15px;
+    /* border: 1px red solid; */
+    /* left: 150px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items{
+    width: 25%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    border-radius: 50px;
+    position: relative;
+    /* z-index: 1; */
+    font-size:large;
+    /* text-indent: 30px;  */
+    color:rgba(75, 75, 75, 0.801);
+    cursor: pointer;
+}
+
+.items:after
+{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: 0px !important;
+  margin-top: -150%;
+  opacity: 0;
+  transition: all 0.8s;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.items:active:after
+{
+      margin: 0;
+      padding: 0;
+	  opacity: 1;
+	  transition: 0s;  
+      overflow:hidden;
+} 
+
+
+.main .grid_center .Registration_Holder_SignUp .TextAndTopic .sign_Topics {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px 60px 60px 60px;
+    position:inherit;
+    transition: all 200ms;
+    /* border: red solid 1px; */
+    top: 100px;
+    left: 0px;
+    /* float: left; */
+    row-gap: 10px;
+    /* opacity: 1.0; */
+    /* border: 1px solid red; */
+}
+
+
+.Topic_Items{
+    width: 95%;
+    /* margin-right:2.5px;
+    margin-left:2.5px; */
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    transition: 100ms all;
+}
+
+.Topic_Items:active{
+    height: 80%;
+    width: 80%;
+    font-size:large; 
+
+    /* margin-right:7.5px;
+    margin-left:7.5px; */
+}
+
+/* this class is used in the topics part, where depending on the availability
+   of the class, we put the value in the topic, and also when clicked again delete it.*/
+.Black{
+    background-color: black;
+    color: white;
+}
+
+
+/* .great{
+    width: 100px;
+    height: 50px;
+    border:1px solid black;
+    background-color: pink;
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    
+} */
