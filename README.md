@@ -24,3 +24,26 @@ along the way we solved some backend problems, animating and automating the task
 and this is special to the first page, after proceeding to other pages this problem will be less likely
 to happen.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
