@@ -21,7 +21,9 @@ one way to run these files in local servers:
    
    - you must create some data in the database to be properly run, and be seen, first by creating users
      then by adding questions that is chosen by the user as topics, if the topic was out of the users interests
-     it won't be seen, this will be later worked on for improvments.
+     it won't be seen, this will be later worked on for improvments, so reach the folder SQL_Files and look at these 2 files:
+         - databaseTables.sql
+         - dummyData.sql 
      
 
 
