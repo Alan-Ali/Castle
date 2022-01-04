@@ -11,7 +11,7 @@ one way to run these files in local servers:
    on the database, then after that the (user_Profile_Pic) table must be run, these tables are designed for oracle database.
    - you must also have the oracle database 10g express edition.
    - make a user named PROJECT_CASTLE and make the password the same PROJECT_CASTLE.
-   - after creating the user PROJECT_CASTLE, run the sql file in this order:
+   - after creating the user PROJECT_CASTLE, run the sql file in this <div style="color: green;">order<div>:
       - USER_
       - USER_PROFILE_PIC
       - POST
