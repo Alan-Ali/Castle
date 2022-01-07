@@ -27,7 +27,7 @@ one way to run these files in local servers:
 
 Project Status:
    - the things that must be added for the project completion are and being set are:
-      - [ ] notification system
+      - [x] notification system
       - [ ] finishing up user interests part algorithm in the first page
       - [ ] finishing up the search algorithm and show up results
 
