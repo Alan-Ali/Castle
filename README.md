@@ -7,25 +7,9 @@ one way to run these files in local servers:
    - put the file in htdocs of the xampp directory.(detect the location in your pc, then put it in the htdocs file)
    - open the localhost of your webBrowser.
    - you must also have the oracle database 10g express edition.
-   - make a user named PROJECT_CASTLE and make the password the same PROJECT_CASTLE.
-<<<<<<< HEAD
-   - after creating the user PROJECT_CASTLE in the sql server, run the sql file in this order:
-      - USER_
-      - USER_PROFILE_PIC
-      - USER_BACKGROUND_PIC
-      - POST
-      - Post_Status
-      - User_Status
-   
-   - you must create some data in the database to be properly run, and be seen, first by creating users
-     then by adding questions that is chosen by the user as topics, if the topic was out of the users interests
-     it won't be seen, this will be later worked on for improvments, so reach the folder SQL_Files and look at these 2 files:
-         - databaseTables.sql
-         - dummyData.sql 
-     
+   - make a user named PROJECT_CASTLE and make the password the same PROJECT_CASTLE, in the oracle database.
 
-=======
-   - in the directory Project_Castle_Y3S1\SQL_Files open the file databaseTables.sql, and run the script to create the tables
+   - in the directory Project_Castle_Y3S1\SQL_Files open the file databaseTables.sql, and run the script tocreate the tables
       - run the sql file in this order:
          - USER_
          - USER_PROFILE_PIC
@@ -36,7 +20,7 @@ one way to run these files in local servers:
    - open the file : Project_Castle_Y1S1/phpFiles/RegistrationPage.php. 
    - you must create some data in the database to be properly run, can add data by yourself usin the website, or 
      create dummy data in the dummyData.sql
->>>>>>> fa594cf1f21d8e65802d9e575d172d2d9f475a38
+
 
 Project Status:
    - the things that must be added for the project completion for being set are:
