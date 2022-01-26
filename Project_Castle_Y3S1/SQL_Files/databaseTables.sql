@@ -1,4 +1,4 @@
--- USER_ TABLE 
+/* all the user's personal data */
 CREATE TABLE USER_(
     User_Id VARCHAR2(256) NOT NULL PRIMARY KEY, 
     User_Name VARCHAR2(256) NOT NULL,
@@ -24,7 +24,8 @@ CREATE TABLE USER_(
     USER_DESCRIPTION VARCHAR2(4000) DEFAULT(0)
 );
 
--- ALTER�TABLE�`user`�ADD�`datatype`�VARCHAR(259)�NULL�AFTER�`password`;
+
+/* table for user's profile pic in the user's profile page */
 CREATE TABLE USER_PROFILE_PIC(
     Profile_Pic_Id VARCHAR2(256) PRIMARY KEY, 
     User_Id VARCHAR2(256) NOT NULL REFERENCES USER_(User_Id),
@@ -37,6 +38,8 @@ CREATE TABLE USER_PROFILE_PIC(
     Pic_Date NUMBER NOT NULL -- added
 );
 
+
+/* table for user's background pic in the user's profile page*/
 CREATE TABLE USER_BACKGROUND_PIC(
     Background_Pic_Id VARCHAR2(256) PRIMARY KEY, 
     User_Id VARCHAR2(256) NOT NULL REFERENCES USER_(User_Id),
@@ -50,6 +53,7 @@ CREATE TABLE USER_BACKGROUND_PIC(
 );
 
 
+/* table for Posts made by the user*/
 CREATE TABLE Post(
     Post_Id VARCHAR2(256) PRIMARY KEY,
     User_Id VARCHAR2(256) NOT NULL REFERENCES USER_(User_Id),
@@ -74,7 +78,7 @@ CREATE TABLE Post(
 
 
 
-
+/* table for Post Status of the user */
 CREATE TABLE Post_Status(
         Post_Id VARCHAR2(256) NOT NULL REFERENCES Post(Post_Id),
         FOREIGN KEY(Post_Id) REFERENCES Post(Post_Id),
@@ -84,7 +88,7 @@ CREATE TABLE Post_Status(
         Question NUMBER(1) DEFAULT(0),
         Answer NUMBER(1) DEFAULT(0)
     );
---User_Id VARCHAR2(256) NULL,
+
 
 
 /* this table is created for collecting data depending on the users actions, which will be according to 
@@ -103,9 +107,6 @@ CREATE TABLE USER_DATA(
 
 
 
-
+/* to get all user data */
 select * from User_;
 
-
--- post root is for making only the question post appear
-SELECT * FROM Post WHERE  (Post_Root = '0') AND (ROWNUM <= 20) ORDER BY POST_DATE ASC;
