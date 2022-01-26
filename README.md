@@ -1,4 +1,4 @@
-one way to run these files in local servers:
+# one way to run these files in local servers:
    - you must run a webserver solution like xampp, and start the apache servers.
       - download xampp here: https://www.apachefriends.org/download.html
    - the database used for this project is oracle sql, on oracle 10g express edition
